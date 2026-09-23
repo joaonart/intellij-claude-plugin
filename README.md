@@ -2,6 +2,8 @@
 
 An extension for IntelliJ IDEA and JetBrains IDEs that adds an icon to the main header toolbar (top-right corner) and a custom keyboard shortcut to open the integrated terminal and execute `claude`.
 
+![Claude Code IntelliJ Plugin Preview](src/main/resources/preview/preview.png)
+
 > **Disclaimer:** This is an independent, community-driven plugin created by **João Alves (j-nart)** and is not affiliated with, endorsed by, or associated with Anthropic or Claude.
 
 ---
@@ -47,6 +49,8 @@ intellij-claude-plugin/
             │   ├── plugin.xml           # Extension manifest with Vendor and Change Notes
             │   ├── pluginIcon.svg       # Plugin List Icon (Light Theme)
             │   └── pluginIcon_dark.svg  # Plugin List Icon (Dark Theme)
+            ├── preview/
+            │   └── preview.png          # Plugin preview screenshot
             └── icons/
                 ├── claudeIcon.svg       # Header toolbar SVG icon (Light Theme)
                 └── claudeIcon_dark.svg  # Header toolbar SVG icon (Dark Theme)
