@@ -1,5 +1,6 @@
 package com.jnart.claude
 
+import com.intellij.openapi.actionSystem.ActionUpdateThread
 import com.intellij.openapi.actionSystem.AnActionEvent
 import com.intellij.openapi.project.DumbAwareAction
 import com.intellij.openapi.project.Project
@@ -33,5 +34,9 @@ class ClaudeAction : DumbAwareAction() {
         val hasProject = e.project != null
         e.presentation.isVisible = true
         e.presentation.isEnabled = hasProject
+    }
+
+    override fun getActionUpdateThread(): ActionUpdateThread {
+        return ActionUpdateThread.BGT
     }
 }
